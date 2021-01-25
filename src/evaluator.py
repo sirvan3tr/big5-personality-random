@@ -22,7 +22,6 @@ def evaluator(data):
     for i in range(1, items):
     #for i in data.items(): 
         variable = "Q%d" % i
-        print(variable)
         #Q.append(data[variable])
         Q[i] = data[variable]
 
@@ -344,26 +343,27 @@ def evaluator(data):
         ["Openness", SO]]
     total_scores = list(map(score_return, personalities))
 
-    return {
-        total_scores: total_scores,
-        SEP: SEP,
-        SEFP: SEFP,
-        LO: 45,
-        HI: 55,
-        SE: SE, # extraversion
-        SAP: SAP,
-        SAFP: SAFP,
-        SA: SA, # agreeableness
-        SC: SC, # conscientiousness
-        SN: SN, # neuroticism
-        SCP: SCP,
-        SCFP: SCFP,
-        flev: flev,
-        SOP: SOP,
-        SOFP: SOFP,
-        SO: SO, # openness
-        Nick: Nick,
-        Country: Country,
-        SNP: SNP,
-        SNFP: SNFP,
-        Category: Category}
+    return {'total_scores': total_scores,
+        'SEP': SEP,
+        'SEFP': SEFP,
+        'low': 45,
+        'high': 55,
+        'scores': {
+            'SE': SE, # extraversion
+            'SA': SA, # agreeableness
+            'SC': SC, # conscientiousness
+            'SN': SN, # neuroticism
+            'SO': SO, # openness
+        },
+        'SCP': SCP,
+        'SAP': SAP,
+        'SAFP': SAFP,
+        'SCFP': SCFP,
+        'flev': flev,
+        'SOP': SOP,
+        'SOFP': SOFP,
+        'Nick': Nick,
+        'Country': Country,
+        'SNP': SNP,
+        'SNFP': SNFP,
+        'Category': Category}
