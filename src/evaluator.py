@@ -349,11 +349,13 @@ def evaluator(data):
         'low': 45,
         'high': 55,
         'scores': {
-            'SE': SE, # extraversion
-            'SA': SA, # agreeableness
-            'SC': SC, # conscientiousness
-            'SN': SN, # neuroticism
-            'SO': SO, # openness
+            'Sex': Sex,
+            'Age': Age,
+            'Extraversion': SE, # extraversion
+            'Agreeableness': SA, # agreeableness
+            'Conscientiousness': SC, # conscientiousness
+            'Neuroticism': SN, # neuroticism
+            'Openness': SO, # openness
         },
         'SCP': SCP,
         'SAP': SAP,
