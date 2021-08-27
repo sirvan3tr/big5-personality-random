@@ -1,13 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[8]:
 
 
 from skills_list_generator import skills_list
 
-
-# In[32]:
 
 
 import random
@@ -28,7 +22,7 @@ def binary_search(arr, low, high, x):
 
 
     """
-    # Check base casea
+    # Check base case
     if high >= low:
  
         mid = (high + low) // 2
@@ -52,17 +46,6 @@ def binary_search(arr, low, high, x):
         print("Nothing found for ",x)
         return -1
  
-# Test array
-# arr = [ 2, 3, 4, 10, 40 ]
-# x = 10
- 
-# # Function call
-# result = binary_search(arr, 0, len(arr)-1, x)
- 
-# if result != -1:
-#     print("Element is present at index", str(result))
-# else:
-#     print("Element is not present in array")
 
 
 def skills_generator(number_lower=3,number_upper=15,skill=random.choice(["Sales",
@@ -98,26 +81,6 @@ def skills_generator(number_lower=3,number_upper=15,skill=random.choice(["Sales"
 
     
     """
-    random_skills=["Sales",
-    "Marketing",
-    "Operations",
-    "Software engineering",
-    "Engineering",
-    "Procurement",
-    "Analytics",
-    "Finance",
-    "HR",
-    "Legal",
-    "Innovation",
-    "Teaching",
-    "Art",
-    "Medicine",
-    "culinary skills",
-    "Civil engineering",
-    "Fashion",
-    "Design",
-    "Construction",
-    "Aviation"]
     skill=random.choice(random_skills)
     list_skills=[skill.lower()]
     number=random.randint(number_lower,number_upper)
@@ -141,16 +104,6 @@ def skills_generator(number_lower=3,number_upper=15,skill=random.choice(["Sales"
     return list_skills
     
     
-
-
-# In[35]:
-
-
-skills_generator()
-
-
-# In[ ]:
-
 
 
 
